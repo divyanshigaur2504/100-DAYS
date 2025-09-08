@@ -6,17 +6,15 @@
 int main() {
     int num, original, reversed = 0, remainder;
 
-    // Taking input for the number
     printf("Enter an integer: ");
     scanf("%d", &num);
 
     original = num; // Store the original number
 
-    // do...while loop
     do {
         remainder = num % 10;
         reversed = reversed * 10 + remainder;
-        num /= 10; // This line should be inside the loop
+        num /= 10; 
     } while (num != 0);
 
     if (original == reversed)
