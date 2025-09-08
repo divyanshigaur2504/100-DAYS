@@ -9,7 +9,7 @@ int main() {
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    original = num; // Store the original number
+    original = num;
 
     do {
         remainder = num % 10;
